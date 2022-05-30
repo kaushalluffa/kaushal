@@ -53,8 +53,18 @@ button:focus {
   padding: 1.6rem 13.5rem;
   color: var(--color-white);
 }
+@media only screen and (max-width: 1200px) {
+  .navigation {
+    padding: 1.6rem 8rem;
+  }
+}
 .navigation__links {
   display: flex;
+}
+@media only screen and (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
 }
 .navigation__list {
   display: flex;
@@ -71,6 +81,16 @@ button:focus {
 }
 .navigation__list li:not(:last-child) {
   margin-right: 18rem;
+}
+@media only screen and (max-width: 1400px) {
+  .navigation__list li:not(:last-child) {
+    margin-right: 10rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navigation__list li:not(:last-child) {
+    margin-right: 6rem;
+  }
 }
 .navigation__list li:hover {
   color: var(--color-primary);
@@ -92,6 +112,11 @@ button:focus {
   font-size: 1.4rem;
   line-height: 1.4rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 1570px) {
+  .btn-contact {
+    display: none;
+  }
 }
 
 :root {
@@ -117,8 +142,31 @@ button:focus {
   padding: 11.4rem 13.5rem;
   background-color: var(--color-dark-1);
 }
+@media only screen and (max-width: 1350px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 11.4rem 5rem;
+  }
+}
 .hero__left {
   margin-right: 15rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero__left {
+    margin-right: 0;
+  }
 }
 .hero__left h3 {
   color: var(--color-primary);
@@ -126,11 +174,22 @@ button:focus {
   line-height: 3.2rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 600px) {
+  .hero__left h3 {
+    font-size: 2rem;
+  }
+}
 .hero__left h1 {
   font-size: 6rem;
   line-height: 8rem;
   color: var(--color-white);
   margin-top: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero__left h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 }
 .hero__left p {
   color: rgba(255, 255, 255, 0.64);
@@ -138,6 +197,11 @@ button:focus {
   font-weight: 400;
   line-height: 3.2rem;
   margin-top: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero__left p {
+    font-size: 1.8rem;
+  }
 }
 .hero__left .btns {
   color: var(--color-white);
@@ -153,10 +217,35 @@ button:focus {
   border-radius: 0.6rem;
   margin-right: 4.6rem;
 }
+@media only screen and (max-width: 600px) {
+  .hero__left .btn-projects {
+    font-size: 1.5rem;
+  }
+}
 .hero__left .darr {
   color: var(--color-white);
   font-size: 6.3rem;
   margin-top: 15rem;
   transform: translateY(0);
   animation: darr 2s infinite linear;
+}
+@media only screen and (max-width: 1350px) {
+  .hero__left .darr {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero__left .darr {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .hero__right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero__right {
+    display: none;
+  }
 }
