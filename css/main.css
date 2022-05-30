@@ -142,6 +142,13 @@ button:focus {
   padding: 11.4rem 13.5rem;
   background-color: var(--color-dark-1);
 }
+@media only screen and (max-width: 300px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 11.4rem 5rem;
+  }
+}
 @media only screen and (max-width: 1350px) {
   .hero {
     flex-direction: column;
@@ -151,13 +158,6 @@ button:focus {
   .hero {
     flex-direction: column;
     justify-content: center;
-  }
-}
-@media only screen and (max-width: 370px) {
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    padding: 11.4rem 5rem;
   }
 }
 .hero__left {
