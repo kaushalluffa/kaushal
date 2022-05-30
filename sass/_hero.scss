@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 11.4rem 13.5rem;
+  background-color: var(--color-dark-1);
+  &__left {
+    margin-right: 15rem;
+    h3 {
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      line-height: 3.2rem;
+      font-weight: 300;
+    }
+    h1 {
+      font-size: 6rem;
+      line-height: 8rem;
+      color: var(--color-white);
+      margin-top: 2.5rem;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3.2rem;
+      margin-top: 2.5rem;
+    }
+    .btns {
+      color: var(--color-white);
+      margin-top: 3.5rem;
+    }
+    .btn-projects {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+
+      border-radius: 0.6rem;
+      margin-right: 4.6rem;
+    }
+    .darr {
+      color: var(--color-white);
+      font-size: 6.3rem;
+      margin-top: 15rem;
+      transform: translateY(0);
+      animation: darr 2s infinite linear;
+    }
+  }
+  &__right {
+  }
+}

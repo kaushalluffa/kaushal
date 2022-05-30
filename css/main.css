@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  padding: 1.8rem 3.5rem;
+}
+
+.header {
+  background-color: var(--color-dark-1);
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 13.5rem;
+  color: var(--color-white);
+}
+.navigation__links {
+  display: flex;
+}
+.navigation__list {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  font-style: normal;
+}
+.navigation__list li {
+  padding: 0.5rem 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.navigation__list li:not(:last-child) {
+  margin-right: 18rem;
+}
+.navigation__list li:hover {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.logo span {
+  color: var(--color-primary);
+}
+
+.btn-contact {
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+}
+
+:root {
+  --color-dark-1:#28293e;
+  --color-white: #fff;
+  --color-primary: #EF6D58;
+}
+
+@keyframes darr {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 11.4rem 13.5rem;
+  background-color: var(--color-dark-1);
+}
+.hero__left {
+  margin-right: 15rem;
+}
+.hero__left h3 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+}
+.hero__left h1 {
+  font-size: 6rem;
+  line-height: 8rem;
+  color: var(--color-white);
+  margin-top: 2.5rem;
+}
+.hero__left p {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-top: 2.5rem;
+}
+.hero__left .btns {
+  color: var(--color-white);
+  margin-top: 3.5rem;
+}
+.hero__left .btn-projects {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.6rem;
+  margin-right: 4.6rem;
+}
+.hero__left .darr {
+  color: var(--color-white);
+  font-size: 6.3rem;
+  margin-top: 15rem;
+  transform: translateY(0);
+  animation: darr 2s infinite linear;
+}
